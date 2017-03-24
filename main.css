@@ -66,8 +66,9 @@ a
 .portfolio-image{
 	width:500px;
 	height:225px;
-	margin:2px;
-}
+    border-style:solid;
+    border-color:#99CCFF;
+    border-width:3px;}
 .box-title{
 	font-size:1.5em;
 }
@@ -100,7 +101,5 @@ a
 
 .portfolio-image:hover
 {
-    border-style:solid;
     border-color:#000000;
-    margin:0;
 }
