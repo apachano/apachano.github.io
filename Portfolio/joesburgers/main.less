@@ -70,11 +70,8 @@ a
 	margin-right:2px;
 }
 .nav:hover {
-	border-left-style:solid;
-	border-left-width:2px;
-	border-right-style:solid;
-	border-right-width:2px;
-	border-color:@page-color;
+	border-left:2px solid @page-color;
+	border-right:2px solid @page-color;
 	margin:0;
 }
 @media only screen and (max-width: 800px) {
@@ -84,8 +81,8 @@ a
 	}
 	.nav{
 		margin-bottom:15px;
-		border-top-style:solid;
-		border-bottom-style:solid;
+		border-top-style:2px solid @page-color;
+		border-bottom-style:2px solid @page-color;
 	}
 }
 
@@ -119,7 +116,8 @@ a
 	height:225px;
     border-style:solid;
     border-color:@page-color;
-    border-width:3px;}
+    border-width:3px;
+}
 .box-title{
 	font-size:1.5em;
 }
