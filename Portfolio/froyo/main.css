@@ -21,10 +21,13 @@ body {
   text-align: center;
   margin: 0;
   font-family: arial;
-  color: #002868;
+  color: #9a0049;
 }
 a {
   text-decoration: none;
+}
+footer {
+  border-top-style: 2px solid #77dd77;
 }
 /*-------------------------*/
 /*-------Navigation--------*/
@@ -48,7 +51,7 @@ a {
   width: 150px;
   height: 30px;
   vertical-align: middle;
-  color: #002868;
+  color: #9a0049;
   padding: 10px;
   font-size: 20px;
   margin-left: 2px;
@@ -57,7 +60,7 @@ a {
 .nav:hover {
   /*border-left:2px solid @page-color;
 	/*border-right:2px solid @page-color;*/
-  background-color: #ff0080;
+  background-color: #FF0080;
   /*margin:0;*/
 }
 @media only screen and (max-width: 800px) {
@@ -79,7 +82,7 @@ a {
   display: inline-block;
 }
 .container {
-  color: #002868;
+  color: #9a0049;
   text-align: center;
 }
 .box {
@@ -98,7 +101,7 @@ a {
   width: 39%;
   padding: 1%;
   margin: 2%;
-  height: 150px;
+  height: 275px;
 }
 .menu-box {
   display: inline-block;
@@ -156,7 +159,7 @@ a {
   border-style: solid;
   border-width: 1px;
   vertical-align: middle;
-  color: #002868;
+  color: #9a0049;
   padding: 10px;
   font-size: 20px;
   display: inline-block;
