@@ -78,14 +78,18 @@ footer{
 	/*margin:0;*/
 }
 @media only screen and (max-width: 800px) {
-	#navigation li{
-		display:block;
-		margin-bottom:15px;
+	#navigation{
+		PADDING:0;
+		li{
+			display:block;
+			margin-bottom:0;
+			padding:5px;
+			border-top:.5px solid @page-color;
+			border-bottom:.5px solid @page-color;
+		}
 	}
 	.nav{
 		margin-bottom:15px;
-		border-top-style:2px solid @page-color;
-		border-bottom-style:2px solid @page-color;
 	}
 }
 

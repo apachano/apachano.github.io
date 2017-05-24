@@ -64,14 +64,18 @@ footer {
   /*margin:0;*/
 }
 @media only screen and (max-width: 800px) {
+  #navigation {
+    PADDING: 0;
+  }
   #navigation li {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 0;
+    padding: 5px;
+    border-top: 0.5px solid #77dd77;
+    border-bottom: 0.5px solid #77dd77;
   }
   .nav {
     margin-bottom: 15px;
-    border-top-style: 2px solid #77dd77;
-    border-bottom-style: 2px solid #77dd77;
   }
 }
 /*-------------------------*/
