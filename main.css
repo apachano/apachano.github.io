@@ -18,6 +18,7 @@ a
 	text-align:center;
 	display:inline-block;
 	padding:10px;
+ width:80%;
 }
 #navigation li{
 	list-style:none;
@@ -41,8 +42,8 @@ a
 		display:block;    
     margin-bottom: 0;
     padding: 5px;
-    border-top: 0.5px solid #77dd77;
-    border-bottom: 0.5px solid #77dd77;
+    border-top: 0.5px solid #99CCFF;
+    border-bottom: 0.5px solid #99CCFF;
 	}
 	.nav{
 		margin-bottom:15px;
