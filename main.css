@@ -18,7 +18,9 @@ a
 	text-align:center;
 	display:inline-block;
 	padding:10px;
- width:80%;
+ width:100%;
+ border-top: 0.5px solid #99CCFF;
+ border-bottom: 0.5px solid #99CCFF;
 }
 #navigation li{
 	list-style:none;
