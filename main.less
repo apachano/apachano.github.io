@@ -1,5 +1,17 @@
 @import url("frame.less");
 
+/*-------------------------*/
+/*-------Constants---------*/
+/*-------------------------*/
+@background-color:#FFFFFF;
+@text-color:#000000;
+@page-color:#99CCFF;
+@page-width:100%;
+
+/*-------------------------*/
+/*----------Main-----------*/
+/*-------------------------*/
+
 body
 {
 	/*width:90%;*/
@@ -13,18 +25,18 @@ a
 /*-------------------------*/
 /*-------Navigation--------*/
 /*-------------------------*/
-
-#navigation{
-	border-top: 0.5px solid #99CCFF;
-	border-bottom: 0.5px solid #99CCFF;
-}
 .nav{
-	color:#000000;
+	color:@text-color;
 }
 .nav:hover {
 	border-bottom-style:solid;
 	border-bottom-width:2px;
 	height:28px;
+}
+@media only screen and (max-width: 800px) {
+	#navigation{
+		margin-bottom:0;
+	}
 }
 
 /*-------------------------*/
@@ -35,14 +47,14 @@ a
 	padding:3%;
 }
 .container{
-    background-color:#99CCFF;
-    color:#FFFFFF;
+    background-color:@page-color;
+    color:@background-color;
 }
 .portfolio-image{
 	width:500px;
 	height:225px;
     border-style:solid;
-    border-color:#99CCFF;
+    border-color:@page-color;
     border-width:3px;}
 .box-title{
 	font-size:1.5em;
@@ -54,7 +66,7 @@ a
     }
 }
 .button {
-	color:#FFFFFF;
+	color:@background-color;
 }
 .button:hover{
 	background-color:#90C0F5;

@@ -1,5 +1,13 @@
 
 /*-------------------------*/
+/*-------Defaults----------*/
+/*-------------------------*/
+@background-color:#FFFFFF;
+@page-color:#999999;
+@text-color:#000000;
+@page-width:80%;
+
+/*-------------------------*/
 /*-Mobile Screen Rendering-*/
 /*-------------------------*/
 
@@ -28,7 +36,7 @@ body{
 	text-align:center;
 	display:inline-block;
 	padding:10px;
-	width:80%;
+	width:@page-width;
 }
 .nav{
 	width:150px;
@@ -43,14 +51,17 @@ body{
 }
 @media only screen and (max-width: 800px) {
 	#navigation{
+		border-top: 0.5px solid @page-color;
+		border-bottom: 0.5px solid @page-color;
 	 	width:100%;
 	 	padding:0;
 		li{
 			display:block;    
 		    margin-bottom: 0;
 		    padding: 5px;
-		    border-top: 0.5px solid #99CCFF;
-		    border-bottom: 0.5px solid #99CCFF;
+		    border-top: 0.5px solid @page-color;
+		    border-bottom: 0.5px solid @page-color;
+		    width:100%;
 		}
 	}
 	.nav{
@@ -63,6 +74,10 @@ body{
 /*---------Content---------*/
 /*-------------------------*/
 
+#content{
+	width:@page-width;
+	display:inline-block;
+}
 .container{
     text-align:center;
 }
