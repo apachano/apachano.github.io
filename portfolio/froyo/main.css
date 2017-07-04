@@ -10,6 +10,78 @@
   width: device-width;
   zoom: 1.0;
 }
+body {
+  text-align: center;
+  margin: 0;
+}
+/*-------------------------*/
+/*-------Navigation--------*/
+/*-------------------------*/
+#navigation {
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  width: 80%;
+}
+.nav {
+  width: 150px;
+  height: 30px;
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 20px;
+}
+#navigation li {
+  list-style: none;
+  display: inline-block;
+}
+@media only screen and (max-width: 800px) {
+  #navigation {
+    width: 100%;
+    padding: 0;
+  }
+  #navigation li {
+    display: block;
+    margin-bottom: 0;
+    padding: 5px;
+    border-top: 0.5px solid #99CCFF;
+    border-bottom: 0.5px solid #99CCFF;
+  }
+  .nav {
+    margin-bottom: 15px;
+  }
+}
+/*-------------------------*/
+/*---------Content---------*/
+/*-------------------------*/
+.container {
+  text-align: center;
+}
+.box {
+  display: inline-block;
+  width: 37%;
+  padding: 1%;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 800px) {
+  .box {
+    width: 96%;
+    padding: 2%;
+    height: auto;
+  }
+}
+/*-------------------------*/
+/*---------Buttons---------*/
+/*-------------------------*/
+.button {
+  height: 30px;
+  width: 200px;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  border-style: solid;
+  border-width: 1px;
+}
 /*-------------------------*/
 /*-------Constants---------*/
 /*-------------------------*/
@@ -18,8 +90,6 @@
 /*-------------------------*/
 body {
   width: 100%;
-  text-align: center;
-  margin: 0;
   font-family: arial;
   color: #9a0049;
 }
@@ -33,9 +103,6 @@ footer {
 /*-------Navigation--------*/
 /*-------------------------*/
 #navigation {
-  text-align: center;
-  display: inline-block;
-  padding: 10px;
   border-color: #77dd77;
   border-bottom-style: solid;
   border-top-style: solid;
@@ -48,12 +115,7 @@ footer {
   display: inline-block;
 }
 .nav {
-  width: 150px;
-  height: 30px;
-  vertical-align: middle;
   color: #9a0049;
-  padding: 10px;
-  font-size: 20px;
   margin-left: 2px;
   margin-right: 2px;
 }
@@ -62,21 +124,6 @@ footer {
 	/*border-right:2px solid @page-color;*/
   background-color: #FF0080;
   /*margin:0;*/
-}
-@media only screen and (max-width: 800px) {
-  #navigation {
-    PADDING: 0;
-  }
-  #navigation li {
-    display: block;
-    margin-bottom: 0;
-    padding: 5px;
-    border-top: 0.5px solid #77dd77;
-    border-bottom: 0.5px solid #77dd77;
-  }
-  .nav {
-    margin-bottom: 15px;
-  }
 }
 /*-------------------------*/
 /*---------Content---------*/
@@ -87,43 +134,42 @@ footer {
 }
 .container {
   color: #9a0049;
-  text-align: center;
 }
 .box {
-  display: inline-block;
-  vertical-align: middle;
   border-style: solid;
   border-width: 2px;
   border-color: #77dd77;
 }
 .main-box {
   display: inline-block;
+  width: 37%;
+  padding: 1%;
   vertical-align: middle;
   border-style: solid;
   border-width: 2px;
   border-color: #77dd77;
-  width: 39%;
-  padding: 1%;
   margin: 2%;
   height: 275px;
 }
 .menu-box {
   display: inline-block;
+  width: 37%;
+  padding: 1%;
   vertical-align: middle;
   border-style: solid;
   border-width: 2px;
   border-color: #77dd77;
-  width: 21%;
-  padding: 0px;
+  width: 22%;
   margin: .5%;
   height: auto;
+  padding: 0;
 }
 .box-title {
   font-size: 1.5em;
 }
 @media only screen and (max-width: 1000px) {
   .menu-box {
-    width: 27%;
+    width: 25%;
     padding: 2%;
     height: auto;
   }
@@ -135,7 +181,7 @@ footer {
     height: auto;
   }
   .menu-box {
-    width: 43%;
+    width: 41%;
     padding: 2%;
     height: auto;
   }
@@ -158,15 +204,7 @@ footer {
   }
 }
 .button {
-  height: 30px;
-  width: 200px;
-  border-style: solid;
-  border-width: 1px;
-  vertical-align: middle;
   color: #9a0049;
-  padding: 10px;
-  font-size: 20px;
-  display: inline-block;
 }
 .button:hover {
   background-color: #77dd77;

@@ -1,0 +1,66 @@
+@import url("frame.less");
+
+body
+{
+	/*width:90%;*/
+	font-family:arial;
+}
+a
+{
+	text-decoration:none;
+}
+
+/*-------------------------*/
+/*-------Navigation--------*/
+/*-------------------------*/
+
+#navigation{
+	border-top: 0.5px solid #99CCFF;
+	border-bottom: 0.5px solid #99CCFF;
+}
+.nav{
+	color:#000000;
+}
+.nav:hover {
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	height:28px;
+}
+
+/*-------------------------*/
+/*---------Content---------*/
+/*-------------------------*/
+
+#content div{
+	padding:3%;
+}
+.container{
+    background-color:#99CCFF;
+    color:#FFFFFF;
+}
+.portfolio-image{
+	width:500px;
+	height:225px;
+    border-style:solid;
+    border-color:#99CCFF;
+    border-width:3px;}
+.box-title{
+	font-size:1.5em;
+}
+@media only screen and (max-width: 1100px) {
+    .portfolio-image{
+    	width:90%;
+    	height:auto;
+    }
+}
+.button {
+	color:#FFFFFF;
+}
+.button:hover{
+	background-color:#90C0F5;
+}
+
+.portfolio-image:hover
+{
+    border-color:#000000;
+}
