@@ -24,7 +24,7 @@ body {
   text-align: center;
   display: inline-block;
   padding: 10px;
-  width: 80%;
+  width: 100%;
 }
 .nav {
   width: 150px;
@@ -39,8 +39,8 @@ body {
 }
 @media only screen and (max-width: 800px) {
   #navigation {
-    border-top: 0.5px solid #77dd77;
-    border-bottom: 0.5px solid #77dd77;
+    border-top: 0.5px solid #78000b;
+    border-bottom: 0.5px solid #78000b;
     width: 100%;
     padding: 0;
   }
@@ -48,8 +48,8 @@ body {
     display: block;
     margin-bottom: 0;
     padding: 5px;
-    border-top: 0.5px solid #77dd77;
-    border-bottom: 0.5px solid #77dd77;
+    border-top: 0.5px solid #78000b;
+    border-bottom: 0.5px solid #78000b;
     width: 100%;
   }
   .nav {
@@ -60,7 +60,7 @@ body {
 /*---------Content---------*/
 /*-------------------------*/
 #content {
-  width: 80%;
+  width: 100%;
   display: inline-block;
 }
 .container {
@@ -95,20 +95,59 @@ body {
 /*-------------------------*/
 /*-------Constants---------*/
 /*-------------------------*/
+/*-------------------------*/
+/*----------Main-----------*/
+/*-------------------------*/
 body {
   /*width:90%;*/
   font-family: arial;
 }
 a {
   text-decoration: none;
+  color: #000000;
 }
-#filter {
-  width: 250px;
-  display: inline-block;
-  background-color: #FF5555;
+/*-------------------------*/
+/*---------Content---------*/
+/*-------------------------*/
+#content div {
+  padding: 3%;
 }
-#content {
+.portfolio-image {
   width: 500px;
-  display: inline-block;
-  background-color: #55FF55;
+  height: 225px;
+  border-style: solid;
+  border-color: #78000b;
+  border-width: 3px;
+}
+.box-title {
+  font-size: 1.5em;
+}
+@media only screen and (max-width: 1100px) {
+  .portfolio-image {
+    width: 90%;
+    height: auto;
+  }
+}
+.button {
+  color: #ffffff;
+  background-color: #78000b;
+}
+.button:hover {
+  background-color: #580009;
+}
+.portfolio-image:hover {
+  border-color: #000000;
+}
+.banner {
+  width: 100%;
+}
+.container {
+  background-color: #78000b;
+  color: #ffffff;
+}
+.container .button {
+  background-color: page-color;
+}
+.sponsor {
+  width: 90%;
 }
