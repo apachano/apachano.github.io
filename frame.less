@@ -15,15 +15,16 @@
     width: device-width;
     zoom: 1.0;
 }
- 
+
 /* Prefixed version requred  for IE10 */
- 
+
 @-ms-viewport{
     width: device-width;
     zoom: 1.0;
 }
 
 body{
+	min-width: 250px;
 	text-align:center;
 	margin:0;
 	overflow-x:hidden;
@@ -36,7 +37,9 @@ body{
 #navigation{
 	text-align:center;
 	display:inline-block;
-	padding:10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-padding-start: 0px; //FIX
 	width:@page-width;
 }
 .nav{
@@ -57,9 +60,10 @@ body{
 	 	width:100%;
 	 	padding:0;
 		li{
-			display:block;    
+			display:block;
 		    margin-bottom: 0;
-		    padding: 5px;
+			padding-top: 5px;
+			padding-bottom: 5px;
 		    border-top: 0.5px solid @page-color;
 		    border-bottom: 0.5px solid @page-color;
 		    width:100%;
