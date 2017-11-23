@@ -16,6 +16,7 @@
 body {
   text-align: center;
   margin: 0;
+  overflow-x: hidden;
 }
 /*-------------------------*/
 /*-------Navigation--------*/
@@ -62,6 +63,7 @@ body {
 #content {
   width: 80%;
   display: inline-block;
+  overflow-x: hidden;
 }
 .container {
   text-align: center;
