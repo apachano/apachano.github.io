@@ -14,6 +14,7 @@
   zoom: 1.0;
 }
 body {
+  min-width: 250px;
   text-align: center;
   margin: 0;
   overflow-x: hidden;
@@ -24,7 +25,9 @@ body {
 #navigation {
   text-align: center;
   display: inline-block;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-padding-start: 0px;
   width: 80%;
 }
 .nav {
@@ -48,7 +51,8 @@ body {
   #navigation li {
     display: block;
     margin-bottom: 0;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-top: 0.5px solid #999999;
     border-bottom: 0.5px solid #999999;
     width: 100%;
