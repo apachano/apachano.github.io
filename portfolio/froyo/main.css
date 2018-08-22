@@ -14,8 +14,10 @@
   zoom: 1.0;
 }
 body {
+  min-width: 250px;
   text-align: center;
   margin: 0;
+  overflow-x: hidden;
 }
 /*-------------------------*/
 /*-------Navigation--------*/
@@ -23,7 +25,9 @@ body {
 #navigation {
   text-align: center;
   display: inline-block;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-padding-start: 0px;
   width: 80%;
 }
 .nav {
@@ -47,7 +51,8 @@ body {
   #navigation li {
     display: block;
     margin-bottom: 0;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-top: 0.5px solid #77dd77;
     border-bottom: 0.5px solid #77dd77;
     width: 100%;
@@ -62,6 +67,7 @@ body {
 #content {
   width: 80%;
   display: inline-block;
+  overflow-x: hidden;
 }
 .container {
   text-align: center;
