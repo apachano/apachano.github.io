@@ -14,29 +14,36 @@
 body{
 	text-align:center;
 	background-color:@bg1;
+	display:block;
 }
 
 header{
 	test-align:center;
 	float:center;
+	margin-top:50px;
+	display:block;
+}
+main{
+	background-color:@bg2;
+	display:block;
 }
 footer{
 	margin-bottom:20px;
 }
 
-.content{
-	background-color:@bg2;
-
+h1{
+	margin:0;
 }
 
-
+img{
+	max-width:100%;
+	height:auto;
+}
 
 /*-------------------------*/
 /*-------Containers--------*/
 /*-------------------------*/
 
-main{
-}
 .container{
 	display:flex;
 	flex-wrap: wrap;
@@ -53,11 +60,53 @@ main{
 	padding:5%;
 }
 .third{
-	width:300px;
-
+	width:30%;
+	padding:1.5%;
 }
-
-
+@media only screen and (max-width: 800px) {
+	.half{
+		width:90%;
+	}
+	.third{
+		width:90%;
+	}
+}
+/*-------------------------*/
+/*-------Navigation--------*/
+/*-------------------------*/
+nav{
+	background-color:#000000;
+	position:fixed;
+	width:100%;
+	top:0;
+	text-align:center;
+}
+nav a{
+	display:inline-block;
+	color:#DDDDDD;
+	background-color:#000000;
+	float:left;
+	text-align:center;
+	text-decoration:none;
+	font-size:17px;
+	padding:14px 16px;
+	&:hover{
+		background-color:@bg2;
+	}
+}
+@media only screen and (max-width: 800px) {
+	nav a{
+		width:100%;
+		padding:14px 0px;
+	}
+	nav{
+		position:static;
+		background-color:#000000;
+	}
+	header{
+		margin-top:0px;
+	}
+}
 /*-------------------------*/
 /*-------Special-----------*/
 /*-------------------------*/
@@ -66,15 +115,16 @@ img{
 	display:block;
 }
 
-.banner{
+#banner{
 	width:90%;
 	margin-left:5%;
 	margin-right:5%;
-	margin-top:2.5%;
+	padding-top:10px;
 }
 
 .hours{
-
+	width:300px;
+	display:inline-block;
 }
 .day{
 	width:40%;
@@ -93,4 +143,28 @@ img{
 
 .r{
 	text-align:right;
+}
+
+#events{
+	width:400px;
+}
+.event{
+	width:100%;
+}
+#calendar{
+	width:800px;
+}
+@media only screen and (max-width: 1200px) {
+	#events{
+		width:800px;
+	}
+	.event{
+		width:33%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#calendar{
+		width:90%;
+	}
 }
