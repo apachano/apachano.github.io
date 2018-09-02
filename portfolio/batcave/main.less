@@ -3,7 +3,7 @@
 /*-------------------------*/
 /*-------Constants---------*/
 /*-------------------------*/
-@bg1:#2B2B2B;
+@bg1:#302d2c;
 @bg2:#666666;
 @page-width:100%;
 
@@ -13,11 +13,12 @@
 
 body{
 	text-align:center;
-	background-color:@bg1;
 	display:block;
+	background-color:@bg2;
 }
 
 header{
+	background-color:@bg1;
 	text-align:center;
 	float:center;
 	margin-top:50px;
@@ -28,8 +29,9 @@ main{
 	display:block;
 }
 footer{
-	margin-bottom:20px;
+	padding-bottom:20px;
 	color:@bg2;
+	background-color:@bg1;
 }
 
 h1{
@@ -79,6 +81,7 @@ nav{
 	background-color:#000000;
 	position:fixed;
 	width:100%;
+	height:50px;
 	top:0;
 	text-align:center;
 }
@@ -128,16 +131,20 @@ img{
 	display:inline-block;
 }
 
-.transition{
+#transition{
 	width:100%;
 }
 
 .l{
 	text-align:left;
+	width:99px;
+	display:inline-block;
 }
 
 .r{
 	text-align:right;
+	width:200px;
+	display:inline-block;
 }
 
 #events{

@@ -106,10 +106,11 @@ body {
 /*-------------------------*/
 body {
   text-align: center;
-  background-color: #2b2b2b;
   display: block;
+  background-color: #666666;
 }
 header {
+  background-color: #302d2c;
   text-align: center;
   float: center;
   margin-top: 50px;
@@ -120,8 +121,9 @@ main {
   display: block;
 }
 footer {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   color: #666666;
+  background-color: #302d2c;
 }
 h1 {
   margin: 0;
@@ -167,6 +169,7 @@ nav {
   background-color: #000000;
   position: fixed;
   width: 100%;
+  height: 50px;
   top: 0;
   text-align: center;
 }
@@ -212,14 +215,18 @@ img {
   width: 300px;
   display: inline-block;
 }
-.transition {
+#transition {
   width: 100%;
 }
 .l {
   text-align: left;
+  width: 99px;
+  display: inline-block;
 }
 .r {
   text-align: right;
+  width: 200px;
+  display: inline-block;
 }
 #events {
   width: 400px;
