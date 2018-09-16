@@ -111,7 +111,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 header {
-  background-color: #302d2c;
+  background-color: #403d3c;
   text-align: center;
   float: center;
   margin-top: 50px;
@@ -124,7 +124,7 @@ main {
 footer {
   padding-bottom: 20px;
   color: #ffffff;
-  background-color: #302d2c;
+  background-color: #403d3c;
 }
 h1,
 h2,
