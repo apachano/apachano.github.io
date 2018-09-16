@@ -196,13 +196,10 @@ nav a:hover {
   nav a {
     width: 100%;
     padding: 14px 0px;
+    display: none;
   }
-  nav {
-    position: static;
-    background-color: #000000;
-  }
-  header {
-    margin-top: 0px;
+  nav.responsive a {
+    display: block;
   }
 }
 /*-------------------------*/
