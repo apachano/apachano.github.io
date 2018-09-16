@@ -10,12 +10,19 @@
 	<meta name="viewport" content="width=device-width">
     <link href="main.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rakkas|Roboto" rel="stylesheet">
+
 </head>
 
 <body>
 	<nav>
-		<a href="index.html">HOME</a>
-		<a href="events.html">EVENTS</a>
+		<a href="index.html" class="left">HOME</a>
+		<a href="events.html" class="left">EVENTS</a>
+		<!-- <a href="index.html"><img src="images/header1.png" height="50" width="200"></a>-->
+		<a href="http://www.facebook.com/pg/batcavegames" class="right"><i class="fab fa-facebook-square"></i></a>
+		<a href="http://twitter.com/" class="right"><i class="fab fa-twitter-square"></i></a>
+		<a href="http://reddit.com" class="right"><i class="fab fa-reddit-square"></i></a>
 	</nav>
 	<header>
 		<div>
@@ -25,12 +32,14 @@
 	<img src="images/paralax2.png" id="transition"/>
 	<main class="container">
 		<div class="full">
-			<h1>Welcome to the web home of batcave games.</h1>
+			<h1>Welcome to batcave games.</h1>
 			<p>We are a card and game shop located in Vancouver Washington. We host many events including Friday night magic.</p>
 		</div>
 		<div class="half">
-			<h2>EVENTS</h2>
-			<P>We are always doing tons of fun events like pokemon tourneys, Friday night magic, and of course DnD. Check out our <a href="events.html">events</a> page to see our schedule.</p>
+			<div class="content">
+				<h2>EVENTS</h2>
+				<P>We are always doing tons of fun events like pokemon tourneys, Friday night magic, and of course DnD. Check out our <a href="events.html">events</a> page to see our schedule.</p>
+			</div>
 		</div>
 		<div class="half">
 			<img src="images/gallery1.png"/>
@@ -38,34 +47,45 @@
 		<div class="half">
 			<img src="images/gallery2.png"/>
 		</div>
-		<div class="content half">
-			<h2>VISIT US!</h2>
-			<p>Please come by our shop, the hours are: 11:00am to 10:00pm every day of the week (Don't be afraid to call outside of normal business hours because we might be here).</p>
+		<div class="half">
+			<div class="content">
+				<h2>VISIT US!</h2>
+				<p>Please come by our shop, the hours are: 11:00am to 10:00pm every day of the week (Don't be afraid to call outside of normal business hours because we might be here).</p>
+			</div>
 		</div>
 	</main>
 	<footer class="container">
 		<div class="third">
-			<h3>Batcave Games</h3>
-			<p>360-980-8138</p>
-			<p>13215 SE Mill Plain Blvd #C9</p>
-			<p>Vancouver, WA 98684</p>
-		</div>
-		<div class="third">
-			<h3>OUR HOURS</h3>
-			<div class="hours">
-				<div class="l">Sunday</div><div class="r">11:00am-10:00pm</div>
-				<div class="l">Monday</div><div class="r">11:00am-10:00pm</div>
-				<div class="l">Tuesday</div><div class="r">11:00am-10:00pm</div>
-				<div class="l">Wednesday</div><div class="r">11:00am-10:00pm</div>
-				<div class="l">Thursday</div><div class="r">11:00am-10:00pm</div>
-				<div class="l">Friday</div><div class="r">11:00am-12:00am</div>
-				<div class="l">Saturday</div><div class="r">11:00am-10:00pm</div>
+			<div class="content">
+				<h3>BATCAVE GAMES</h3>
+				<p>360-980-8138</p>
+				<p>13215 SE Mill Plain Blvd #C9</p>
+				<p>Vancouver, WA 98684</p>
 			</div>
 		</div>
 		<div class="third">
-			<h3>FOLLOW US</h3>
-			<a class="icon" href="http://www.facebook.com/pg/batcavegames"><img src="images/facebook.png" height="100" width="100"></a>
-			<a class="icon" href="#"><img src="images/reddit.png" height="100" width="100"></a>
+			<div class="content">
+			<h3>OUR HOURS</h3>
+				<div class="hours">
+					<div class="l">Sunday</div><div class="r">11:00am-10:00pm</div>
+					<div class="l">Monday</div><div class="r">11:00am-10:00pm</div>
+					<div class="l">Tuesday</div><div class="r">11:00am-10:00pm</div>
+					<div class="l">Wednesday</div><div class="r">11:00am-10:00pm</div>
+					<div class="l">Thursday</div><div class="r">11:00am-10:00pm</div>
+					<div class="l">Friday</div><div class="r">11:00am-12:00am</div>
+					<div class="l">Saturday</div><div class="r">11:00am-10:00pm</div>
+				</div>
+			</div>
+		</div>
+		<div class="third">
+			<div class="content">
+				<h3>FOLLOW US</h3>
+				<div class="media">
+					<a href="http://www.facebook.com/pg/batcavegames"><i class="fab fa-facebook-square"></i></a>
+					<a href="http://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+					<a href="http://reddit.com"><i class="fab fa-reddit-square"></i></a>
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>
