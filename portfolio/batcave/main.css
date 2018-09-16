@@ -107,7 +107,7 @@ body {
 body {
   text-align: center;
   display: block;
-  background-color: #888888;
+  background-color: #ffffff;
 }
 header {
   background-color: #302d2c;
@@ -117,12 +117,12 @@ header {
   display: block;
 }
 main {
-  background-color: #888888;
+  background-color: #ffffff;
   display: block;
 }
 footer {
   padding-bottom: 20px;
-  color: #888888;
+  color: #ffffff;
   background-color: #302d2c;
 }
 h1 {
@@ -184,7 +184,7 @@ nav a {
   padding: 14px 16px;
 }
 nav a:hover {
-  background-color: #888888;
+  background-color: #ffffff;
 }
 @media only screen and (max-width: 800px) {
   nav a {
