@@ -192,6 +192,9 @@ nav a {
 nav a:hover {
   color: red;
 }
+#menu {
+  display: none;
+}
 @media only screen and (max-width: 800px) {
   nav a {
     width: 100%;
@@ -199,6 +202,9 @@ nav a:hover {
     display: none;
   }
   nav.responsive a {
+    display: block;
+  }
+  #menu {
     display: block;
   }
 }
@@ -220,9 +226,6 @@ img {
 }
 #transition {
   width: 100%;
-}
-.icon {
-  display: inline-block;
 }
 .l {
   text-align: left;
