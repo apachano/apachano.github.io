@@ -187,7 +187,7 @@ footer {
 }
 @media only screen and (max-width: 800px) {
   .main-box {
-    width: 96%;
+    width: 92%;
     padding: 2%;
     height: auto;
   }
