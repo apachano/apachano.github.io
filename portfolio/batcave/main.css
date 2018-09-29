@@ -107,30 +107,37 @@ body {
 body {
   text-align: center;
   display: block;
-  background-color: #888888;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
 }
 header {
-  background-color: #302d2c;
+  background-color: #403d3c;
   text-align: center;
   float: center;
   margin-top: 50px;
   display: block;
 }
 main {
-  background-color: #888888;
+  background-color: #ffffff;
   display: block;
 }
 footer {
   padding-bottom: 20px;
-  color: #888888;
-  background-color: #302d2c;
+  color: #ffffff;
+  background-color: #403d3c;
 }
-h1 {
+h1,
+h2,
+h3 {
   margin: 0;
+  font-family: 'Rakkas', cursive;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+a {
+  color: inherit;
 }
 /*-------------------------*/
 /*-------Containers--------*/
@@ -143,16 +150,16 @@ img {
   width: 100%;
 }
 .full {
-  width: 90%;
-  padding: 5%;
+  width: 100%;
+  padding: 0;
 }
 .half {
-  width: 40%;
-  padding: 5%;
+  width: 50%;
+  padding: 0;
 }
 .third {
-  width: 30%;
-  padding: 1.5%;
+  width: 33%;
+  padding: 0;
 }
 @media only screen and (max-width: 800px) {
   .half {
@@ -177,26 +184,28 @@ nav a {
   display: inline-block;
   color: #DDDDDD;
   background-color: #000000;
-  float: left;
   text-align: center;
   text-decoration: none;
-  font-size: 17px;
-  padding: 14px 16px;
+  font-size: 24px;
+  padding: 11px 16px;
 }
 nav a:hover {
-  background-color: #888888;
+  color: red;
+}
+#menu {
+  display: none;
 }
 @media only screen and (max-width: 800px) {
   nav a {
     width: 100%;
     padding: 14px 0px;
+    display: none;
   }
-  nav {
-    position: static;
-    background-color: #000000;
+  nav.responsive a {
+    display: block;
   }
-  header {
-    margin-top: 0px;
+  #menu {
+    display: block;
   }
 }
 /*-------------------------*/
@@ -218,9 +227,6 @@ img {
 #transition {
   width: 100%;
 }
-.icon {
-  display: inline-block;
-}
 .l {
   text-align: left;
   width: 90px;
@@ -231,11 +237,24 @@ img {
   width: 200px;
   display: inline-block;
 }
+.content {
+  width: 90%;
+  padding: 5%;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
 #events {
   width: 400px;
 }
 .event {
   width: 100%;
+}
+.media {
+  font-size: 50px;
 }
 #calendar {
   width: 800px;
