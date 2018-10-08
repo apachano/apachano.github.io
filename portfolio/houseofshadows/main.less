@@ -1,0 +1,145 @@
+/*-------------------------*/
+/*-------Constants---------*/
+/*-------------------------*/
+@bg-color:#FFFFFF;
+@text-color:#000000;
+@page-color:#FFFFFF;
+@page-width:100%;
+
+/*-------------------------*/
+/*----------Main-----------*/
+/*-------------------------*/
+
+body{
+	width:@page-width;
+	font-family:arial;
+	color:@text-color;
+	margin:0;
+	text-align:center;
+}
+main{
+	padding-top:50px;
+	font-size:1.5em;
+}
+
+footer{
+	background-color:@text-color;
+	color:@page-color;
+	padding:5px;
+}
+
+a{
+	color:inherit;
+}
+
+img{
+	width:90%;
+}
+
+/*-------------------------*/
+/*-------Navigation--------*/
+/*-------------------------*/
+
+nav{
+	background-color:@text-color;
+	color:@page-color;
+	width:100%;
+	height:50px;
+	top:0;
+	text-align:center;
+}
+
+nav a{
+	display:inline-block;
+	color:#DDDDDD;
+	background-color:#000000;
+	text-align:center;
+	text-decoration:none;
+	font-size:24px;
+	padding:11px 16px;
+	&:hover{
+		//background-color:@bg2;
+		//color:@bg1;
+		color:#AA0000;
+	}
+}
+
+
+#menu{
+	display:none;
+}
+@media only screen and (max-width: 900px) {
+	nav a{
+		width:100%;
+		padding:14px 0px;
+		display:none;
+	}
+	nav.responsive a{
+		display:block;
+	}
+	#menu{
+		display:block;
+	}
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + main {
+  padding-top: 60px;
+}
+
+/*-------------------------*/
+/*----------Flex-----------*/
+/*-------------------------*/
+.container{
+	display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.full, .half, .third, .fourth{
+	width:100%;
+}
+
+@media only screen and (min-width: 800px) {
+	.half{
+		width:90%;
+	}
+	.third{
+		width:90%;
+	}
+	.fourth{
+		width:50%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.half{
+		width:50%;
+	}
+	.third{
+		width:33%;
+	}
+	.fourth{
+		width:25%;
+	}
+}
+
+/*-------------------------*/
+/*----------Misc-----------*/
+/*-------------------------*/
+
+.right{
+	float:right;
+}
+.left{
+	float:left;
+}
+
+.frame{
+	width:90%;
+}
